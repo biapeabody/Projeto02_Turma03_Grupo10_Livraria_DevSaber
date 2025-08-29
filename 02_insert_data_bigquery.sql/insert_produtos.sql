@@ -1,0 +1,35 @@
+
+-- Inserção de dados na tabela Produtos (sem duplicatas)
+
+INSERT INTO `t1engenhariadados.Grupo_10.Produtos` (ID_Produto, Nome_Produto, Categoria_Produto, Preco_Produto)
+VALUES
+    (101, 'Fundamentos de SQL', 'Dados', 60.00),
+    (102, 'Duna', 'Ficção Científica', 80.50),
+    (103, 'Python para Dados', 'Programação', 75.00),
+    (104, 'O Guia do Mochileiro', 'Ficção Científica', 42.00),
+    (105, 'Machine Learning Básico', 'Dados', 95.00),
+    (106, 'Clean Code', 'Programação', 120.00),
+    (107, 'Neuromancer', 'Ficção Científica', 58.90),
+    (108, 'Estatística Essencial', 'Dados', 70.00),
+    (109, 'Senhor dos Anéis - A Sociedade do Anel', 'Fantasia', 85.00),
+    (110, 'Introdução a Bancos de Dados', 'Dados', 65.50),
+    (111, 'Design Patterns', 'Programação', 110.00),
+    (112, 'A Revolução dos Bichos', 'Ficção', 38.00),
+    (113, 'O Príncipe', 'História', 47.90),
+    (114, 'Crônicas de Nárnia', 'Fantasia', 79.00),
+    (115, 'Data Science do Zero', 'Dados', 89.90),
+    (116, 'O Poder do Hábito', 'Negócios', 56.00),
+    (117, 'Dom Casmurro', 'Romance', 34.00),
+    (118, 'Kafka à Beira-Mar', 'Romance', 64.90),
+    (119, 'Inteligência Artificial Moderna', 'Dados', 130.00),
+    (120, '1984', 'Ficção Científica', 52.00),
+    (121, 'O Código Da Vinci', 'Suspense', 49.90),
+    (122, 'Pai Rico, Pai Pobre', 'Negócios', 55.00),
+    (123, 'Guerra e Paz', 'História', 92.00),
+    (124, 'Hobbit', 'Fantasia', 60.00),
+    (125, 'Introdução ao Java', 'Programação', 72.00),
+    (126, 'Deep Learning com Python', 'Dados', 150.00),
+    (127, 'Meditações', 'História', 44.90),
+    (128, 'Orgulho e Preconceito', 'Romance', 40.00),
+    (129, 'Sherlock Holmes: Um Estudo em Vermelho', 'Suspense', 36.00),
+    (130, 'Scrum: A Arte de Fazer o Dobro', 'Negócios', 62.00);
