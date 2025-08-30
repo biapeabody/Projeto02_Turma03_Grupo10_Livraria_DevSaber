@@ -1,5 +1,4 @@
-
--- Pergunta 3: Qual o faturamento total por categoria de produto?
+-- Pergunta 7: Qual o faturamento total por categoria de produto?
 
 SELECT p.Categoria_Produto, SUM(v.Quantidade * p.Preco_Produto) AS Faturamento
 FROM `t1engenhariadados.Grupo_10.Vendas` v
