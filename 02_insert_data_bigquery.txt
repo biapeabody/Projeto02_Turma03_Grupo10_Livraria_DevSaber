@@ -1,0 +1,219 @@
+-- Inserir dados na tabela clientes2 (sem duplicatas)
+
+
+INSERT INTO `t1engenhariadados.Grupo_10.Clientes2` 
+  (ID_Cliente, Nome_Cliente, Email_Cliente, Idade_Cliente,Estado_Cliente)
+VALUES 
+(1,'AnaSophiaTeixeira','ana.sophia.teixeira@exemplo.com',28,'RJ'),
+
+(2,'NinaAraújo','nina.araújo@exemplo.com',42,'AC'),
+
+(3,'EnzoCardoso','enzo.cardoso@exemplo.com',48,'RR'),
+
+(4,'LaradaPaz','lara.da.paz@exemplo.com',37,'RJ'),
+
+(5,'JúliaMoura','júlia.moura@exemplo.com',43,'RR'),
+
+(6,'StellaDias','stella.dias@exemplo.com',38,'RJ'),
+
+(7,'LuigiMoreira','luigi.moreira@exemplo.com',49,'SP'),
+
+(8,'NathanNunes','nathan.nunes@exemplo.com',47,'SP'),
+
+(9,'VitorHugoPires','vitor.hugo.pires@exemplo.com',58,'SP'),
+
+(10,'JoãoLucasAlves','joão.lucas.alves@exemplo.com',46,'RR'),
+
+(11,'BrunoGonçalves','bruno.gonçalves@exemplo.com',42,'RJ'),
+
+(12,'PauloCavalcanti','paulo.cavalcanti@exemplo.com',22,'CE'),
+
+(13,'AnaJúliadaCruz','ana.júlia.da.cruz@exemplo.com',51,'AM'),
+
+(14,'GustavodaRocha','gustavo.da.rocha@exemplo.com',50,'ES'),
+
+(15,'VicenteMonteiro','vicente.monteiro@exemplo.com',51,'AM'),
+
+(16,'IsabellaCardoso','isabella.cardoso@exemplo.com',42,'ES'),
+
+(17,'FernandoCostela','fernando.costela@exemplo.com',43,'MA'),
+
+(18,'MelissaCampos','melissa.campos@exemplo.com',44,'AM'),
+
+(19,'LaísFogaça','laís.fogaça@exemplo.com',47,'AM'),
+
+(20,'MiguelCastro','miguel.castro@exemplo.com',28,'RJ'),
+
+(21,'PedroLucasFarias','pedro.lucas.farias@exemplo.com',46,'AM'),
+
+(22,'EduardoBarbosa','eduardo.barbosa@exemplo.com',48,'ES'),
+
+(23,'GabriellyTeixeira','gabrielly.teixeira@exemplo.com',42,'RR'),
+
+(24,'GabrielMoraes','gabriel.moraes@exemplo.com',55,'AL'),
+
+(25,'MariaJuliaCampos','maria.julia.campos@exemplo.com',30,'SP'),
+
+(26,'LuizOtávioAraújo','luiz.otávio.araújo@exemplo.com',52,'MG'),
+
+(27,'AlanaSilveira','alana.silveira@exemplo.com',38,'AM'),
+
+(28,'AnaLuizaAraújo','ana.luiza.araújo@exemplo.com',51,'MG'),
+
+(29,'DaniloGomes','danilo.gomes@exemplo.com',42,'AM'),
+
+(30,'BryanBarbosa','bryan.barbosa@exemplo.com',36,'ES'),
+
+(31,'MariaClaradaMota','maria.clara.da.mota@exemplo.com',31,'SP'),
+
+(32,'LeonardoGonçalves','leonardo.gonçalves@exemplo.com',49,'RJ'),
+
+(33,'CecíliaCaldeira','cecília.caldeira@exemplo.com',28,'AM'),
+
+(34,'LuizHenriqueAraújo','luiz.henrique.araújo@exemplo.com',32,'RJ'),
+
+(35,'LuigiRocha','luigi.rocha@exemplo.com',38,'ES'),
+
+(36,'AndréCarvalho','andré.carvalho@exemplo.com',18,'ES'),
+
+(37,'AnaJúliaCastro','ana.júlia.castro@exemplo.com',20,'RR'),
+
+(38,'AnaSophiaPereira','ana.sophia.pereira@exemplo.com',44,'RR'),
+
+(39,'MariaCecíliaNovaes','maria.cecília.novaes@exemplo.com',25,'ES'),
+
+(40,'DiegoCastro','diego.castro@exemplo.com',60,'ES'),
+
+(41,'PietraSilva','pietra.silva@exemplo.com',50,'AC'),
+
+(42,'AlexiaSantos','alexia.santos@exemplo.com',38,'RJ'),
+
+(43,'HelenaNogueira','helena.nogueira@exemplo.com',26,'SP'),
+
+(44,'SofiaFogaça','sofia.fogaça@exemplo.com',24,'AM'),
+
+(45,'JoãoVitorNascimento','joão.vitor.nascimento@exemplo.com',42,'RJ'),
+
+(46,'AnaBeatrizGomes','ana.beatriz.gomes@exemplo.com',26,'AM'),
+
+(47,'IsabellyPeixoto','isabelly.peixoto@exemplo.com',39,'RR'),
+
+(48,'DaviPires','davi.pires@exemplo.com',55,'AM'),
+
+(49,'TheoCavalcanti','theo.cavalcanti@exemplo.com',18,'MG'),
+
+(50,'MariaCecíliaMoura','maria.cecília.moura@exemplo.com',38,'SP')
+
+
+
+-- Inserção de dados na tabela Produtos (sem duplicatas)
+
+
+INSERT INTO `t1engenhariadados.Grupo_10.Produtos2` 
+    (ID_Produto, Nome_Produto, Categoria_Produto, Preco_Produto)
+VALUES
+(950,'1984','Ficção',76.06),
+(298,'O Senhor dos Anéis','Não Ficção',25.52),
+(697,'Dom Quixote','Biografia',58.37),
+(771,'Cem Anos de Solidão','Ciência',47.02),
+(168,'O Nome do Vento','Tecnologia',85.93),
+(121,'Duna','História',38.74),
+(296,'Orgulho e Preconceito','Filosofia',45.4),
+(376,'A Revolução dos Bichos','Autoajuda',84.47),
+(548,'Sapiens: Uma Breve História da Humanidade','Ficção',81.05),
+(767,'Homo Deus','Não Ficção',58.93),
+(844,'Armas, Germes e Aço','Biografia',54.57),
+(559,'O Gene','Ciência',82.17),
+(716,'A Vida Imortal de Henrietta Lacks','Tecnologia',74.13),
+(525,'O Corpo','História',21.16),
+(799,'Steve Jobs','Filosofia',33.33),
+(829,'Leonardo da Vinci','Autoajuda',63.91),
+(319,'Minha História','Ficção',86.9),
+(149,'Long Walk to Freedom','Não Ficção',38.56),
+(381,'Einstein: His Life and Universe','Biografia',22.98),
+(743,'Churchill: A Life','Ciência',48.42),
+(107,'Uma Breve História do Tempo','Tecnologia',57.65),
+(434,'O Universo Numa Casca de Noz','História',29.63),
+(629,'Cosmos','Filosofia',42.3),
+(488,'A Estrutura das Revoluções Científicas','Autoajuda',83.8),
+(999,'Astrofísica para Apressados','Ficção',67.26),
+(556,'Clean Code','Não Ficção',70.92),
+(124,'The Pragmatic Programmer','Biografia',29.43),
+(543,'Artificial Intelligence: A Modern Approach','Ciência',50.4),
+(716,'Design Patterns','Tecnologia',25.14),
+(778,'Introduction to Algorithms','História',86.28),
+(188,'Guns, Germs, and Steel','Filosofia',35.66),
+(701,'The Silk Roads','Autoajuda',54.63),
+(754,'A People’s History of the United States','Ficção',59.57),
+(514,'Postwar: A History of Europe Since 1945','Não Ficção',51.61),
+(311,'The Wright Brothers','Biografia',77.71),
+(499,'A República','Ciência',87.39),
+(434,'Crítica da Razão Pura','Tecnologia',25.98),
+(595,'Além do Bem e do Mal','História',37.14),
+(714,'Meditações','Filosofia',42.73),
+(714,'O Ser e o Nada','Autoajuda',24.55),
+(934,'O Poder do Hábito','Ficção',48.3),
+(275,'Os 7 Hábitos das Pessoas Altamente Eficazes','Não Ficção',40.81),
+(823,'Como Fazer Amigos e Influenciar Pessoas','Biografia',23.46),
+(624,'Mindset','Ciência',54.24),
+(995,'A Sutil Arte de Ligar o F*da-se','Tecnologia',61.02);
+
+
+-- Inserção de dados na tabela Vendas
+
+
+INSERT INTO `t1engenhariadados.Grupo_10.Vendas2` 
+  (ID_Venda, ID_Cliente, ID_Produto, Data_Venda, Quantidade)
+VALUES
+(9979,22,121,'2023-07-28',1),
+(7823,24,767,'2024-03-19',5),
+(9393,28,548,'2023-10-05',1),
+(5224,34,381,'2023-05-13',5),
+(8199,15,381,'2023-03-06',1),
+(7983,14,999,'2023-02-12',5),
+(7480,1,298,'2024-12-17',5),
+(3496,28,697,'2023-05-20',3),
+(9321,9,559,'2023-11-07',5),
+(7797,31,296,'2024-02-08',2),
+(1090,26,716,'2023-08-04',3),
+(7374,3,548,'2023-08-08',2),
+(6894,28,829,'2023-03-21',1),
+(3156,9,754,'2023-08-22',2),
+(6716,6,311,'2024-10-12',2),
+(3986,50,629,'2023-02-24',1),
+(5171,2,188,'2023-05-18',1),
+(2562,47,376,'2024-09-09',5),
+(2443,21,298,'2023-10-13',5),
+(1755,48,934,'2023-09-26',2),
+(1300,33,275,'2024-02-17',2),
+(4043,33,771,'2024-05-18',10),
+(4880,14,556,'2024-03-08',1),
+(2034,27,701,'2023-12-01',2),
+(2105,44,275,'2024-10-27',2),
+(8006,20,823,'2024-09-16',1),
+(1356,28,771,'2024-04-20',1),
+(5603,32,543,'2024-10-10',2),
+(3160,20,514,'2024-02-26',2),
+(2834,14,716,'2023-07-25',3),
+(8691,48,754,'2024-04-24',5),
+(1952,10,629,'2024-05-05',1),
+(5090,29,743,'2023-05-08',3),
+(6818,33,829,'2023-06-18',1),
+(9827,34,823,'2023-02-28',3),
+(3142,23,124,'2024-04-28',3),
+(7183,33,934,'2024-02-15',1),
+(1283,25,514,'2023-07-23',2),
+(5893,38,714,'2023-07-05',10),
+(4817,10,311,'2023-12-02',2),
+(3133,46,716,'2023-05-05',5),
+(2821,28,629,'2023-03-11',2),
+(7148,46,714,'2024-09-10',3),
+(5913,27,778,'2024-02-13',1),
+(7050,26,778,'2023-01-01',2),
+(3701,29,543,'2023-03-27',5),
+(3682,23,950,'2024-04-21',10),
+(8797,36,999,'2023-10-26',2),
+(5377,4,697,'2023-02-06',2),
+(4201,32,556,'2023-04-06',1)
+;
+

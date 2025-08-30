@@ -1,0 +1,187 @@
+-- 1. Rankear vendas por categorias para o exercico de 2024, identificar a categoria mais vendida.
+
+  DISTINCT Categoria_Produto, Total_Compra
+FROM 
+  `t1engenhariadados.Grupo_10.vw_relatorioLivraria`
+
+-- transformando o formato data para string
+
+WHERE
+  EXTRACT(YEAR
+  FROM
+    Data_Venda) = 2024
+
+ORDER BY Total_Compra DESC;
+
+
+
+
+-- 2. Identificar o Estado com maior e menor numero de vendas no ano de 2024.
+
+SELECT DISTINCT 
+    Estado_Cliente, 
+  SUM(Total_Compra) AS Vendas_Estado   -- agrupa os estados e soma os valores de vendas de cada registro
+FROM 
+  `t1engenhariadados.Grupo_10.vw_relatorioLivraria`
+
+WHERE
+  EXTRACT (YEAR 
+  FROM
+    Data_Venda) = 2024
+
+GROUP BY  
+  Estado_Cliente
+
+ORDER BY 
+  Vendas_Estado DESC;
+
+
+ -- 3. Título de maior interesse pelos clientes no estado de RR no ano de 2023
+
+SELECT DISTINCT
+      Nome_Produto, 
+      SUM(Quantidade) AS Quantidade_Vendida,
+      Categoria_Produto,
+      Estado_Cliente
+      
+FROM 
+  `t1engenhariadados.Grupo_10.vw_relatorioLivraria`
+
+WHERE
+  EXTRACT(YEAR FROM Data_Venda) = 2023
+  AND Estado_Cliente = "SP"
+
+GROUP BY 
+  Nome_Produto, 
+  Categoria_Produto, 
+  Estado_Cliente
+
+ORDER BY Categoria_Produto DESC;
+
+
+-- 4. idade média dos clientes por categoria
+
+SELECT 
+    p.Categoria_Produto,
+    ROUND(AVG(c.Idade_Cliente), 0) AS Idade_Media,  -- ROUND() arredonda as casas decimais da media de idade
+    COUNT(DISTINCT c.Idade_Cliente) AS Quantidade_Clientes,
+   
+  
+FROM `t1engenhariadados.Grupo_10.Vendas2` v
+
+JOIN `t1engenhariadados.Grupo_10.Clientes2`  c
+  ON v.ID_Cliente = c.ID_Cliente 
+
+JOIN `t1engenhariadados.Grupo_10.Produtos2`  p
+  ON v.ID_Produto = p.ID_Produto
+
+GROUP BY 
+    p.Categoria_Produto     
+ORDER BY 
+      Idade_Media DESC;
+
+
+-- 5. Quais produtos tiveram maior saída.
+
+SELECT DISTINCT
+      Nome_Produto, 
+      Nome_Cliente,
+      Categoria_Produto,            
+      SUM(Quantidade) AS Quantidade_Vendida,
+      
+      
+FROM 
+  `t1engenhariadados.Grupo_10.vw_relatorioLivraria`
+
+
+GROUP BY 
+  Nome_Cliente,
+  Nome_Produto, 
+  Categoria_Produto
+  
+ORDER BY Quantidade_Vendida DESC;
+
+
+
+-- 6. Valor do ticket medio de compra por cliente.
+
+SELECT 
+    c.ID_Cliente,
+    c.Nome_Cliente,
+    ROUND(SUM(v.Quantidade * p.Preco_Produto) /   -- soma a quantidade de produtos vendidos * o preco do produto
+    COUNT(DISTINCT v.ID_Venda), 2) AS Ticket_Medio -- count traz a quantidade de linhas no numero de vendas
+
+FROM
+   `t1engenhariadados.Grupo_10.Vendas2` v
+
+JOIN 
+  `t1engenhariadados.Grupo_10.Clientes2`  c
+    ON v.ID_Cliente = c.ID_Cliente  -- ROUND() arredonda as casas decimais da media de idade
+   
+JOIN 
+  `t1engenhariadados.Grupo_10.Produtos2`  p
+    ON v.ID_Produto = p.ID_Produto
+
+GROUP BY 
+    c.ID_Cliente,
+    c.Nome_Cliente    
+
+ORDER BY 
+      Ticket_Medio DESC;
+
+-- 7. Exibir apenas os titulos correspondentes a uma categoria
+
+SELECT *
+FROM t1engenhariadados.Grupo_10.Produtos2
+WHERE Categoria_Produto = 'Filosofia'
+
+
+
+
+
+
+-- view para consulta de vendas no estado de RR
+
+
+CREATE OR REPLACE VIEW `t1engenhariadados.Grupo_10.vw_relatorioLivraria` as
+SELECT
+    C.Nome_Cliente, 
+    C.Estado_Cliente,
+    V.ID_Venda,
+    P.Nome_Produto,
+    P.Categoria_Produto,
+    P.Preco_Produto,
+    V.Quantidade,   
+    V.Data_Venda,
+    (P.Preco_Produto * V.Quantidade) AS Total_Compra -- calcula o valor total da compra 
+    
+FROM 
+  `t1engenhariadados.Grupo_10.Vendas2` AS V    -- Seleciona a tabela procipal 
+
+JOIN `t1engenhariadados.Grupo_10.Clientes2` AS C  -- junta as vendas ao cadastro do cliente
+  ON V.ID_Cliente = C.ID_Cliente
+  
+JOIN `t1engenhariadados.Grupo_10.Produtos2` AS P -- junta as vendas ao cadastro do produto
+  ON V.ID_Produto = P.ID_Produto
+
+WHERE 
+  C.Estado_Cliente = 'RR'
+ORDER BY 
+  V.Data_Venda;
+
+-- VISUALIZAÇÃO TABULAR DA VIEW
+Select *
+FROM
+ `t1engenhariadados.Grupo_10.vw_relatorioLivraria`
+
+
+
+
+
+
+
+
+
+
+
+

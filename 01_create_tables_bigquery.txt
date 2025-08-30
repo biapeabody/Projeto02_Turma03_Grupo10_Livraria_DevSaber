@@ -1,0 +1,32 @@
+%sql
+
+CREATE OR REPLACE TABLE `t1engenhariadados.Grupo_10.Clientes2` (
+    ID_Cliente INT64,
+    Nome_Cliente STRING,
+    Email_Cliente STRING,
+    Idade_Cliente INT64,
+    Estado_Cliente STRING,
+    
+);
+
+-- Tabela de Produtos
+-- Armazena informações únicas de cada produto.
+CREATE OR REPLACE TABLE `t1engenhariadados.Grupo_10.Produtos2` (
+    ID_Produto INT64,
+    Nome_Produto STRING,
+    Categoria_Produto STRING,
+    Preco_Produto BOOL
+);
+
+-- Tabela de Vendas
+-- Tabela de fatos que relaciona clientes e produtos, registrando cada transação.
+-- As relações com Clientes e Produtos são lógicas, mantidas pelos campos de ID.
+CREATE OR REPLACE TABLE `t1engenhariadados.Grupo_10.Vendas2` (
+    ID_Venda INT64,
+    ID_Cliente INT64,
+    ID_Produto INT64,
+    Data_Venda DATE,
+    Quantidade INT64
+);
+
+
