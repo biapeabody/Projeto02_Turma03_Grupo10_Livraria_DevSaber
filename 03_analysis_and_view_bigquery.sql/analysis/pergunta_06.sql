@@ -1,5 +1,5 @@
 
--- Pergunta 2: Qual foi o produto mais vendido em 'SP'?
+-- Pergunta 6: Qual foi o produto mais vendido em 'SP'?
 
 SELECT p.Nome_Produto, SUM(v.Quantidade) AS Total_Vendido
 FROM `t1engenhariadados.Grupo_10.Vendas` v
