@@ -52,7 +52,34 @@ Migrar o processo para um **Data Warehouse no Google BigQuery**, garantindo **qu
 
 
 ## 💡 Perguntas respondidas 
+## 📦 Estrutura do Repositório
 
-
-
+```bash
+📁 PROJETO02_TURMA03_GRUPO10_LIVRARIA_DEVSABER
+ ┣ 📂 01_create_tables_bigquery.sql
+ ┃ ┣ 📜 clientes.sql
+ ┃ ┣ 📜 produtos.sql
+ ┃ ┗ 📜 vendas.sql
+ ┣ 📂 02_insert_data_bigquery.sql
+ ┃ ┣ 📜 insert_clientes.sql
+ ┃ ┣ 📜 insert_produtos.sql
+ ┃ ┗ 📜 insert_vendas.sql
+ ┣ 📂 03_analysis_and_view_bigquery.sql
+ ┃ ┣ 📂 analysis
+ ┃ ┃ ┣ 📜 pergunta_01.sql
+ ┃ ┃ ┣ 📜 pergunta_02.sql
+ ┃ ┃ ┣ 📜 pergunta_03.sql
+ ┃ ┃ ┣ 📜 pergunta_04.sql
+ ┃ ┃ ┣ 📜 pergunta_05.sql
+ ┃ ┃ ┣ 📜 pergunta_06.sql
+ ┃ ┃ ┣ 📜 pergunta_07.sql
+ ┃ ┃ ┣ 📜 pergunta_08.sql
+ ┃ ┃ ┣ 📜 pergunta_09.sql
+ ┃ ┃ ┗ 📜 pergunta_10.sql
+ ┃ ┣ 📂 views
+ ┃ ┃ ┣ 📜 vw01_vendas_detalhadas.sql
+ ┃ ┃ ┣ 📜 vw02_receita_mensal.sql
+ ┃ ┃ ┣ 📜 vw03_top_10_clientes.sql
+ ┃ ┃ ┗ 📜 vw04_vendas_RR.sql
+ ┗ 📜 README.md
 ---
