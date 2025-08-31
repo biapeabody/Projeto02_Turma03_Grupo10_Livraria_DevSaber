@@ -1,7 +1,6 @@
-
 -- Inserção de dados na tabela Produtos (sem duplicatas)
 
-INSERT INTO `t1engenhariadados.Grupo_10.Produtos` (ID_Produto, Nome_Produto, Categoria_Produto, Preco_Produto)
+INSERT INTO `t1engenhariadados.Livraria_DevSaber_Turma3_Grupo10.produtos` (ID_Produto, Nome_Produto, Categoria_Produto, Preco_Produto)
 VALUES
     (101, 'Fundamentos de SQL', 'Dados', 60.00),
     (102, 'Duna', 'Ficção Científica', 80.50),

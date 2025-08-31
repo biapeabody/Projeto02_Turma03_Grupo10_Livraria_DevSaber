@@ -1,7 +1,7 @@
 
  -- Inserção de dados na tabela Vendas
  
-INSERT INTO `t1engenhariadados.Grupo_10.Vendas` (ID_Venda, ID_Cliente, ID_Produto, Data_Venda, Quantidade)
+INSERT INTO `t1engenhariadados.Livraria_DevSaber_Turma3_Grupo10.vendas` (ID_Venda, ID_Cliente, ID_Produto, Data_Venda, Quantidade)
 VALUES
     (1, 1, 101, '2024-01-15', 1),
     (2, 2, 102, '2024-01-18', 1),

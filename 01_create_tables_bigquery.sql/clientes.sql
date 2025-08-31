@@ -6,7 +6,7 @@
 -- Armazena informações únicas de cada cliente.
 -- No BigQuery, chaves primárias não são impostas, mas ID_Cliente serve como identificador lógico.
 
-CREATE OR REPLACE TABLE `t1engenhariadados.Grupo_10.Clientes` (
+CREATE OR REPLACE TABLE `t1engenhariadados.Livraria_DevSaber_Turma3_Grupo10.clientes` (
     ID_Cliente INT64,
     Nome_Cliente STRING,
     Email_Cliente STRING,
