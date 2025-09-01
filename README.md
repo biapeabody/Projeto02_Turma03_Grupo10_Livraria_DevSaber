@@ -59,7 +59,6 @@ Migrar o processo para um **Data Warehouse no Google BigQuery**, garantindo **qu
   * _Denilza Lima da Silva_
   * _Kryssia José de Mendonça_
   * _Raylane Araujo de Sousa_
-  * _Rayra Bandeira de Mello Gomes Dias_
   * _Renato Gomes Souza_
   * _Thaís Falcão De Souza_
 
